@@ -5,8 +5,6 @@
     <author>....</author>
     <license>Apache</license>
 
-    <asset src="www/map-close-button.png" target="img/map-close-button.png" />
-
     <!-- android -->
         <!-- ios -->
     <platform name="ios">
@@ -27,6 +25,5 @@
 
         <source-file src="src/ios/NavigationBar.m" />
         <source-file src="src/ios/CDVNavigationBarController.m" />
-        <source-file src="src/ios/MapKit.m" />
     </platform>
 </plugin>
