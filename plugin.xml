@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0">
+
+    <name>NavigationBar</name>
+    <author>....</author>
+    <license>Apache</license>
+
+    <asset src="www/map-close-button.png" target="img/map-close-button.png" />
+
+    <!-- android -->
+        <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/NavigationBar.js" name="NavigationBar">
+            <clobbers target="plugin.NavigationBar" />
+        </js-module>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="NavigationBar">
+                <param name="ios-package" value="NavigationBar"/>
+            </feature>
+        </config-file>
+
+        <resource-file src="src/ios/CDVNavigation.xib" />
+
+        <header-file src="src/ios/NavigationBar.h" />
+        <header-file src="src/ios/CDVNavigationBarController.h" />
+
+        <source-file src="src/ios/NavigationBar.m" />
+        <source-file src="src/ios/CDVNavigationBarController.m" />
+        <source-file src="src/ios/MapKit.m" />
+    </platform>
+</plugin>
